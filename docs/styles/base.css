@@ -1,0 +1,98 @@
+@import url("https://fonts.cdnfonts.com/css/campton");
+@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "tthoves-regular";
+  src: url("../fonts/tthoves/TTHoves-Regular.eot");
+  src: url("../fonts/tthoves/TTHoves-Regular.eot") format("embedded-opentype"),
+    url("../fonts/tthoves/TTHoves-Regular.woff2") format("woff2"),
+    url("../fonts/tthoves/TTHoves-Regular.woff") format("woff"),
+    url("../fonts/tthoves/TTHoves-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "tthoves-medium";
+  src: url("../fonts/tthoves/TTHoves-Medium.eot");
+  src: url("../fonts/tthoves/TTHoves-Medium.eot") format("embedded-opentype"),
+    url("../fonts/tthoves/TTHoves-Medium.woff2") format("woff2"),
+    url("../fonts/tthoves/TTHoves-Medium.woff") format("woff"),
+    url("../fonts/tthoves/TTHoves-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "tthoves-semibold";
+  src: url("../fonts/tthoves/TTHoves-DemiBold.eot");
+  src: url("../fonts/tthoves/TTHoves-DemiBold.eot") format("embedded-opentype"),
+    url("../fonts/tthoves/TTHoves-DemiBold.woff2") format("woff2"),
+    url("../fonts/tthoves/TTHoves-DemiBold.woff") format("woff"),
+    url("../fonts/tthoves/TTHoves-DemiBold.ttf") format("truetype");
+}
+
+.font-campton {
+  font-family: "Campton", sans-serif;
+}
+.font-tthoves-regular {
+  font-family: "tthoves-regular", sans-serif;
+}
+.font-tthoves-medium {
+  font-family: "tthoves-medium", sans-serif;
+}
+.font-tthoves-semibold {
+  font-family: "tthoves-semibold", sans-serif;
+}
+
+.splide .splide__arrow.splide__arrow--prev {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  filter: drop-shadow(0px 12px 14px rgba(0, 14, 87, 0.12));
+  left: -16px;
+  opacity: 100;
+}
+.splide .splide__arrow:disabled svg {
+  opacity: 100;
+  fill: #b0b8d0 !important;
+}
+.splide .splide__arrow.splide__arrow--prev svg {
+  fill: #1254ff;
+}
+.splide .splide__arrow.splide__arrow--next {
+  opacity: 100;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  filter: drop-shadow(0px 12px 14px rgba(0, 14, 87, 0.12));
+  right: -16px;
+}
+.splide .splide__arrow.splide__arrow--next svg {
+  fill: #1254ff;
+}
+
+.splide .splide__pagination.splide__pagination--ltr {
+  bottom: -1.5rem;
+  height: fit-content;
+  gap: 1.12rem;
+}
+.splide .splide__pagination__page {
+  background-color: #b0b8d0;
+}
+.splide .splide__pagination__page.is-active {
+  background-color: #1254ff;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 6px -4px rgba(0, 11, 67, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .splide .splide__arrow.splide__arrow--prev {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .splide .splide__arrow.splide__arrow--next {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
